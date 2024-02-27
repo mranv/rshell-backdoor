@@ -6,7 +6,6 @@ This repository contains bind and reverse shells implemented in Rust programming
 
 To utilize the bind shell, clone the repository and navigate to the `bind-shell` directory. For a quick test, execute the `cargo run` command, which will start a bind shell on port 4444 by default. You can verify its functionality using tools like netcat (`nc localhost 4444`) or any preferred programming language. Upon establishing a TCP connection, you will be presented with a shell session on your local machine:
 
-![Rust bind shell example.](https://i.imgur.com/WwkbYUd.png "Rust bind shell example.")
 
 _Note: `ncat` is a newer version of the standard `nc`, but functions the same here._
 
@@ -16,7 +15,6 @@ To change the listening port, modify the code in `main.rs`. _Additionally, the i
 
 To use the reverse shell, clone the repository and navigate to the `reverse-shell` directory. For testing, set up a netcat listener in one terminal (`nc -lvp 4444`) and execute the program in another terminal (`cargo run`):
 
-![Rust reverse shell example.](https://imgur.com/QxRj8dj.png "Rust reverse shell example.")
 
 _Ensure to specify port 4444 for it to function out of the box._
 
